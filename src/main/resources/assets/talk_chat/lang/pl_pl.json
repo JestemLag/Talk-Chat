@@ -1,0 +1,7 @@
+{
+  "title.talk_chat.config": "Ustawienia Talk Chat",
+  "text.talk_chat.type_sound": "Dźwięk Pisania",
+  "text.talk_chat.delete_sound": "Dźwięk Usuwania",
+  "text.talk_chat.type_delay": "Opóźnienie Dźwięku Pisania (ms)",
+  "text.talk_chat.delete_delay": "Opóźnienie Dźwięku Usuwania (ms)"
+}
