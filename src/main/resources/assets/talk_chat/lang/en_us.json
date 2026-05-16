@@ -3,5 +3,7 @@
   "text.talk_chat.type_sound": "Typing Sound",
   "text.talk_chat.delete_sound": "Deleting Sound",
   "text.talk_chat.type_delay": "Typing Sound Delay (ms)",
-  "text.talk_chat.delete_delay": "Deleting Sound Delay (ms)"
+  "text.talk_chat.delete_delay": "Deleting Sound Delay (ms)",
+  "key.talk_chat.config": "Config",
+  "kay.category.talk_chat.talk_chat": "Talk Chat"
 }
