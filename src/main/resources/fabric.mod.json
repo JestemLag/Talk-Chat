@@ -18,9 +18,9 @@
 	},
 	"mixins": ["talk_chat.mixins.json"],
 	"depends": {
-		"fabricloader": ">=0.19.2",
+		"fabricloader": ">=0.15.0",
 		"minecraft": "~1.21.11",
 		"java": ">=21",
-		"fabric-api": "*"
+		"fabric-api": ">=0.139.5"
 	}
 }
