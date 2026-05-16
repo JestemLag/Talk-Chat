@@ -1,9 +1,12 @@
-# Talk Chat
+### Talk Chat
+---
+Typing is no longer boring, thanks to this one simple mod!
 
-## Setup
+You can use any Minecraft sound you want. And the best part? Custom sounds work as well!
 
-For setup instructions, please see the [Fabric Documentation page](https://docs.fabricmc.net/develop/getting-started/creating-a-project#setting-up) related to the IDE that you are using.
+That's right folks - You can use **ANY** sound for your chat, signs and more!
 
-## License
+---
+This mod is the one for you if you ever wanted custom chat sounds - it's extremely simple, efficient and infinitely customizable!
 
-This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
+You choose what sound to use, what delay it should fire with - and you don't have to uninstall this mod ever again, thanks to our *Disable Button™*
