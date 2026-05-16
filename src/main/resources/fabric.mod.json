@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "talk_chat",
+	"version": "${version}",
+	"name": "Talk Chat",
+	"description": "Adds a typing sound to chat! Fully customizable!",
+	"authors": ["JestemLag"],
+	"contact": {
+		"homepage": "https://modrinth.com/mod/talkchat",
+		"sources": "https://github.com/JestemLag/Talk-Chat",
+		"issues": "https://github.com/JestemLag/Talk-Chat/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/talk_chat/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": ["me.jestem.talk_chat.TalkChatClient"]
+	},
+	"mixins": ["talk_chat.mixins.json"],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
