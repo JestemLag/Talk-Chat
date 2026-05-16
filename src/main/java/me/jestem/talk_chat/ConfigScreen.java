@@ -33,24 +33,24 @@ public class ConfigScreen extends Screen {
         }).bounds(this.width/2-60, 30, 120, 20).build();
 
         // TYPING
-        StringWidget sndLabelWidget = new StringWidget(50, 90, 150, 10, Component.translatable("text.talk_chat.type_sound"), this.font);
-        EditBox sndInputWidget = new EditBox(this.font, 50, 100, 150, 20, Component.translatable("input.talk_chat.type_sound"));
+        StringWidget sndLabelWidget = new StringWidget(this.width/2-170, 90, 150, 10, Component.translatable("text.talk_chat.type_sound"), this.font);
+        EditBox sndInputWidget = new EditBox(this.font, this.width/2-170, 100, 150, 20, Component.translatable("input.talk_chat.type_sound"));
         sndInputWidget.setValue(Config.config.sound);
 
         // TYPING DELAY
-        StringWidget delayLabelWidget = new StringWidget(50, 130, 150, 10, Component.translatable("text.talk_chat.type_delay"), this.font);
-        EditBox delayInputWidget = new EditBox(this.font, 50, 140, 150, 20, Component.translatable("input.talk_chat.type_delay"));
+        StringWidget delayLabelWidget = new StringWidget(this.width/2-170, 130, 150, 10, Component.translatable("text.talk_chat.type_delay"), this.font);
+        EditBox delayInputWidget = new EditBox(this.font, this.width/2-170, 140, 150, 20, Component.translatable("input.talk_chat.type_delay"));
         delayInputWidget.setValue(String.valueOf(Config.config.delay));
 
 
         // DELETING
-        StringWidget delLabelWidget = new StringWidget(this.width-200, 90, 150, 10, Component.translatable("text.talk_chat.delete_sound"), this.font);
-        EditBox delInputWidget = new EditBox(this.font, this.width-200, 100, 150, 20, Component.translatable("input.talk_chat.delete_sound"));
+        StringWidget delLabelWidget = new StringWidget(this.width/2+20, 90, 150, 10, Component.translatable("text.talk_chat.delete_sound"), this.font);
+        EditBox delInputWidget = new EditBox(this.font, this.width/2+20, 100, 150, 20, Component.translatable("input.talk_chat.delete_sound"));
         delInputWidget.setValue(Config.config.sound_del);
 
         // DELETING DELAY
-        StringWidget delDelayLabelWidget = new StringWidget(this.width-200, 130, 150, 10, Component.translatable("text.talk_chat.delete_delay"), this.font);
-        EditBox delDelayInputWidget = new EditBox(this.font, this.width-200, 140, 150, 20, Component.translatable("input.talk_chat.delete_delay"));
+        StringWidget delDelayLabelWidget = new StringWidget(this.width/2+20, 130, 150, 10, Component.translatable("text.talk_chat.delete_delay"), this.font);
+        EditBox delDelayInputWidget = new EditBox(this.font, this.width/2+20, 140, 150, 20, Component.translatable("input.talk_chat.delete_delay"));
         delDelayInputWidget.setValue(String.valueOf(Config.config.delay_del));
 
 
