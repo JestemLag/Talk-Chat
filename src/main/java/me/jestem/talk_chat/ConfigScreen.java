@@ -1,5 +1,6 @@
 package me.jestem.talk_chat;
 
+import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.components.EditBox;
 import net.minecraft.client.gui.components.StringWidget;
@@ -21,8 +22,9 @@ public class ConfigScreen extends Screen {
     protected void init() {
         StringWidget titleWidget = new StringWidget(this.width/2-textWidth("title.talk_chat.config")/2, 10, textWidth("title.talk_chat.config"), 10, Component.translatable("title.talk_chat.config"), this.font);
 
+        // ENABLED
         Component enabledLabel = Config.config.enabled ? Component.translatable("manageServer.resourcePack.enabled") : Component.translatable("manageServer.resourcePack.disabled");
-        Button buttonWidget = Button.builder(enabledLabel, (btn) -> {
+        Button enabledWidget = Button.builder(enabledLabel, (btn) -> {
             if(Config.config.enabled) {
                 btn.setMessage(Component.translatable("manageServer.resourcePack.disabled"));
                 Config.config.enabled = false;
@@ -31,6 +33,7 @@ public class ConfigScreen extends Screen {
                 Config.config.enabled = true;
             }
         }).bounds(this.width/2-60, 30, 120, 20).build();
+
 
         // TYPING
         StringWidget sndLabelWidget = new StringWidget(this.width/2-170, 90, 150, 10, Component.translatable("text.talk_chat.type_sound"), this.font);
@@ -84,7 +87,8 @@ public class ConfigScreen extends Screen {
         }).bounds(this.width/2-60, this.height-30, 120, 20).build();
 
         this.addRenderableWidget(titleWidget);
-        this.addRenderableWidget(buttonWidget);
+        this.addRenderableWidget(enabledWidget);
+
 
         this.addRenderableWidget(sndLabelWidget);
         this.addRenderableWidget(sndInputWidget);
