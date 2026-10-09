@@ -8,7 +8,6 @@ import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
-import org.lwjgl.glfw.GLFW;
 
 public class TalkChatClient implements ClientModInitializer {
     @Override
@@ -16,7 +15,7 @@ public class TalkChatClient implements ClientModInitializer {
         Config.load();
 
         KeyMapping.Category CATEGORY = KeyMapping.Category.register(Identifier.fromNamespaceAndPath("talk_chat", "talk_chat"));
-        KeyMapping configKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.talk_chat.config", InputConstants.Type.KEYSYM, GLFW.GLFW_KEY_K, CATEGORY));
+        KeyMapping configKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.talk_chat.config", InputConstants.Type.KEYBOARD, InputConstants.KEY_K, CATEGORY));
 
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             while (configKey.consumeClick()) {
